@@ -1,0 +1,24 @@
+{
+  "name": "girish",
+  "version": "1.0.0",
+  "main": "BANKINGAPPLICATION.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Girishkumarande/GIRISH.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Girishkumarande/GIRISH/issues"
+  },
+  "homepage": "https://github.com/Girishkumarande/GIRISH#readme",
+  "description": "",
+  "dependencies": {
+    "ejs": "^5.0.1",
+    "express": "^5.2.1"
+  }
+}
