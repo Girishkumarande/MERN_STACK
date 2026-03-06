@@ -23,16 +23,20 @@ app.post("/login", (req, res) => {
     if (user.password === password) {
       res.redirect("/");
     } else {
-      res.redirect("/login");
+      res.redirect("/login",{ error: "Invalid password" });
     }
   } else {
-    res.redirect("/login");
+    res.redirect("/login",{ error: "User not found" });
   }
   res.redirect("/");
 });
 
 app.get("/register", (req, res) => {
   res.render("register");
+});
+app.post("/register", (req, res) => {
+    users=[...users, req.body];
+    res.redirect("/");
 });
 app.get("/", (req, res) => {
   res.render("dashboard", { users });
